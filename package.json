@@ -10,6 +10,8 @@
     "debug": "~4.1.1",
     "express": "~4.17.1",
     "http-errors": "~1.7.3",
+    "markdown-it": "^10.0.0",
+    "markdown-it-attrs": "^3.0.2",
     "moment": "^2.24.0",
     "morgan": "~1.9.1",
     "pug": "^2.0.4"

@@ -17,11 +17,11 @@ router.use('/moment', express.static(path.resolve('./node_modules/moment/min/mom
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', introPageContent);
+  res.status(200).render('index', introPageContent);
 });
 
 router.get('/showtime', function (req, res, next) {
-  res.render('showtime');
+  res.status(200).render('showtime');
 });
 
 module.exports = router;
