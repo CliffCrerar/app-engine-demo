@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/skeleton/css/normalize.css')
+    link(rel='stylesheet', href='/stylesheets/skeleton/css/skeleton.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='shortcut icon', href='favicon.png', type='image/png')
+  body
+    // Navbar
+    include ./components/nav.jade
+    hr.under-nav
+    // Header
+    // include ./components/header.jade 
+    // hr/
+    // App Main
+    main
+      div.inner-main
+        block content
+        block showTime
+    hr/
+    // App Footer
+    include ./components/footer.jade

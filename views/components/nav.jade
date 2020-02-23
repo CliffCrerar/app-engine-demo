@@ -1,0 +1,9 @@
+nav.navbar
+	div.nav-banner
+		h6 Powered by
+	- const links = [{route: '',caption: 'Home'},{route: 'showtime',caption: 'Time'},{route: 'about',caption: 'About'}]
+	ul.nav-links
+		each item in links
+			li
+				a(href=`/${item.route}`)= item.caption
+	
