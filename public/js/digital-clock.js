@@ -5,7 +5,7 @@
 
 const
 	eventType = 'DOMContentLoaded', // event type
-	timeFormat = 'hh:mm:ss', // time format 
+	timeFormat = 'HH:mm:ss', // time format 
 	displayEl = document.getElementById('clock-display'), // get element
 	$ = document, // set doc to $
 	time = () => moment().format(timeFormat), // get the time function

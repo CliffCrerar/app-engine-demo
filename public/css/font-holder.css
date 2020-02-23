@@ -21,3 +21,11 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Hairline&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Geostar&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Stalinist+One&display=swap');
+
+#clock-display {
+	/* font-family: Odibee Sans; */
+	/* font-family: Anton; */
+	font-family: ZCOOL QingKe HuangYou;
+	letter-spacing: 10px;
+
+}

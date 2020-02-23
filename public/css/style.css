@@ -1,5 +1,29 @@
+/*
+ * Global CSS
+ */
+
+/* @import './font-holder.css'; */
+
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap');
+
+
 :root{
   box-sizing: border-box;
+}
+
+#clock-display {
+	font-family: ZCOOL QingKe HuangYou;
+	letter-spacing: 10px;
+  font-size: calc(2em + 10vw);
+  text-align: center;
+}
+.clock-img-container{
+  text-align: center;
+}
+.clock-img{
+  height: 15vw;
+  width: auto;
+  
 }
 
 body,html {
