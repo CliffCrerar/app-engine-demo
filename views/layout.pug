@@ -6,12 +6,13 @@ html
     link(rel='stylesheet', href='/stylesheets/skeleton/css/skeleton.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='shortcut icon', href='favicon.png', type='image/png')
+    script(src="moment")
   body
     // Navbar
-    include ./components/nav.jade
+    include ./components/nav.pug
     hr.under-nav
     // Header
-    // include ./components/header.jade 
+    // include ./components/header.pug
     // hr/
     // App Main
     main
@@ -20,4 +21,4 @@ html
         block showTime
     hr/
     // App Footer
-    include ./components/footer.jade
+    include ./components/footer.pug
