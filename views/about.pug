@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1 #{title}
+  p #{subtitle}
+  hr/
+  div.about-page(style="position: relative")
+    p #{introParagraph}
+    img.img-fluid(src=`${mobileFirstImg}` alt="mobile first image")
+    ul
+    each bullet in bullets
+      li= bullet
+    hr/
+    blockquote <strong>#{author[0]}</strong>#{author[1]}<br>#{author[2]}
+    div(style="text-align: center")
+      a(href="https://cliff-crerar.tech" target="_blank") Author Page
