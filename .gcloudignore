@@ -12,6 +12,8 @@
 # below:
 .git
 .gitignore
+.vscode
+gcloud-app-engine.code-workspace
 
 # Node.js dependencies:
 node_modules/
