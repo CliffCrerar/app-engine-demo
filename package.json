@@ -1,9 +1,12 @@
 {
   "name": "gcloud-app-engine-demo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
+  "main":"./bin/www",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "dev":"nodemon ./bin/www",
+    "submit":"gcloud builds submit --tag gcr.io/infinity-arc/expressjs-container-demo"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -17,7 +20,6 @@
     "pug": "^2.0.4"
   },
   "description": "> Author: C. Crerar",
-  "main": "app.js",
   "devDependencies": {},
   "repository": {
     "type": "git",

@@ -7,7 +7,7 @@ block content
   div.about-page(style="position: relative")
     p #{introParagraph}
     img.img-fluid(src=`${mobileFirstImg}` alt="mobile first image")
-    ul
+    ul.list-style
     each bullet in bullets
       li= bullet
     hr/

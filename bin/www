@@ -4,6 +4,10 @@
  * Module dependencies.
  */
 
+if(process.argv[2]){
+  process.env.PORT = process.argv[2].split("=")[1]
+}
+
 const
   app = require('../app'),
   debug = require('debug')('gcloud-app-engine:server'),
@@ -14,7 +18,7 @@ const
    */
 
   port = normalizePort(process.env.PORT || '3000');
-  
+
 app.set('port', port);
 
 /**
