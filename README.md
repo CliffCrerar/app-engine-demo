@@ -24,11 +24,7 @@ If the SDK is installed run `gcloud config` and follow the prompts. (note: you f
 
 ### CI CD - Build and deploy
 
-The app is deployed using the `cloudbuild.yml` when running the command.
-
-```bash
-gcloud app deploy
-```
+see `cloudbuild.yaml`
 
 ### Manual deployment
 
@@ -56,10 +52,10 @@ npm run deploy
 ```
 
 ### Build locally and push to google cloud platform `container registry`
-
+```
  docker build . --tag gcr.io/[PROJECT-ID]/[IMAGE]
-
-Replace [PROJECT-ID] with your Google Cloud project ID and replace [IMAGE] with the image name of your choice.
+```
+Replace `[PROJECT-ID]` with your Google Cloud project ID and replace `[IMAGE]` with the image name of your choice.
 If you have not yet configured Docker to use the gcloud command-line tool to authenticate requests to Container Registry, do so now using the command:
 
  gcloud auth configure-docker
@@ -67,6 +63,6 @@ If you have not yet configured Docker to use the gcloud command-line tool to aut
 You need to do this before you can push or pull images using Docker. You only need to do it once.
 Push the container image to Container Registry:
 
- docker push gcr.io/[PROJECT-ID]/[IMAGE]
+ `docker push gcr.io/[PROJECT-ID]/[IMAGE]`
 
-Replace [PROJECT-ID] with your Google Cloud project ID and replace [IMAGE] with the image name you chose when you invoked docker build.
+Replace `[PROJECT-ID]` with your Google Cloud project ID and replace `[IMAGE]` with the image name you chose when you invoked docker build.
