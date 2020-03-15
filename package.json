@@ -5,7 +5,7 @@
   "main": "./bin/www",
   "scripts": {
     "start": "node ./bin/www",
-    "docker:start":"docker run --rm -d  -p 8080:8080/tcp cliffenator/gcloud-express-container:latest"
+    "docker:start":"docker run --rm -d  -p 8080:8080/tcp cliffenator/gcloud-express-container:latest",
     "dev": "nodemon ./bin/www",
     "build":"docker build . -t cliffenator/gcloud-express-container",
     "push":"docker push",
