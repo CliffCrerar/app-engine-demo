@@ -5,10 +5,10 @@
   "main": "./bin/www",
   "scripts": {
     "start": "node ./bin/www",
-    "docker:start":"docker run --rm -d  -p 8080:8080/tcp cliffenator/gcloud-express-container:latest",
+    "docker:start": "docker run --rm -d  -p 8080:8080/tcp cliffenator/gcloud-express-container:latest",
     "dev": "nodemon ./bin/www",
-    "build":"docker build . -t cliffenator/gcloud-express-container",
-    "push":"docker push",
+    "build": "docker build . -t cliffenator/gcloud-express-container",
+    "push": "docker push",
     "submit": "gcloud builds submit --tag gcr.io/infinity-arc/gcloud-express-container",
     "deploy": "gcloud run deploy express --image gcr.io/infinity-arc/gcloud-express-container --allow-unauthenticated"
   },
@@ -43,5 +43,5 @@
   "bugs": {
     "url": "https://github.com/CliffCrerar/app-engine-demo/issues"
   },
-  "homepage": "https://github.com/CliffCrerar/app-engine-demo#readme"
+  "homepage": "https://express-fudcjl2mcq-uc.a.run.app"
 }
