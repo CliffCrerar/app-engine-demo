@@ -128,3 +128,7 @@ hr{
 blockquote{
   font-style: italic;
 }
+
+.list-style{
+  list-style-position: outside !important;
+}
